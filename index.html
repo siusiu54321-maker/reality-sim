@@ -19,7 +19,10 @@ h1{font-size:20px;margin:0}
 .total{font-size:34px;font-weight:700;letter-spacing:-.02em;line-height:1.1}
 .row{display:flex;gap:18px;color:var(--sub);font-size:14px;flex-wrap:wrap;margin-top:4px}
 .up{color:var(--up)}.down{color:var(--down)}
-.ctl{display:flex;gap:6px;align-items:center;font-size:14px;color:var(--sub)}
+.ctl{display:flex;gap:6px;align-items:center;flex-wrap:wrap;font-size:14px;color:var(--sub)}
+.ctl button,.ctl span{white-space:nowrap}
+.ctl button{padding:6px 10px}
+@media(max-width:700px){.top{display:block}.ctl{margin-top:10px}.ctl .who{flex:1 1 100%;margin:4px 0 0}#logout{margin-left:0}}
 button{font:inherit;cursor:pointer;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:8px;padding:6px 12px}
 button:focus-visible{outline:2px solid var(--down);outline-offset:2px}
 button.on{background:var(--acc);color:var(--accink);border-color:var(--acc)}
@@ -71,7 +74,7 @@ button:disabled{opacity:.5;cursor:not-allowed}
 .authbox .msg{margin:0;font-size:12px;color:var(--up);font-weight:700}
 .authbox .link{align-self:center;background:none;border:none;color:var(--sub);font:inherit;font-size:11px;opacity:.75;cursor:pointer;padding:2px 6px;text-decoration:underline}
 .authbox h3{margin:0;font-size:16px}
-.who{font-size:14px;color:var(--ink);margin-right:4px}
+.who{font-size:13px;color:var(--sub);margin-right:4px}
 .tabs{display:flex;gap:6px;margin-bottom:12px}
 .chips{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
 .chip{width:52px;height:52px;border-radius:50%;background:var(--c);color:#fff;border:4px dashed rgba(255,255,255,.85);font-weight:700;padding:0;box-shadow:0 2px 0 rgba(0,0,0,.35)}
